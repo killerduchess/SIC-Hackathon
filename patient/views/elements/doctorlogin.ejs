@@ -1,0 +1,25 @@
+<%layout('layouts/boilerplate.ejs')%>
+
+
+    <div class="row editpage mt-5">
+        <h1 class="text-center mb-3 text-white">Login Doctor</h1>
+        <div class="col-6 offset-3">
+            <form action="/healdesk/doctor/login" method="post">
+                <div class="mb-3">
+                    <label class="form-label text-white"  for="username">Name</label>
+                    <input class='form-control glass' type="text" required="required" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white" for="email">Email</label>
+                    <input class='form-control glass' type="email" required="required" name="email" id="email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white" for="password">Password</label>
+                    <input class='form-control glass' id="'pass" type="password" required="required" name="password" id="password">
+                </div>
+                <div class="mb-3">
+                    <button class="btn glass btn-purple:hover text-white mt-3 mb-3">Login Doctor</button>
+                </div>
+            </form>
+        </div>
+    </div>

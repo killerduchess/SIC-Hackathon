@@ -1,0 +1,10 @@
+<%layout('layouts/boilerplate.ejs')%>
+    <h1 class="text-center mb-4"><%=p.name%></h1>
+    <div class="text-white">
+        <p>DOB - <%=p.dob%></p>
+        <p>SEX - <%=p.gender%></p>
+        <p>PHONE NUMBER - <%=p.phone%></p>
+        <p>EMAIL ID - <%=p.email%></p>
+        <div><a class="btn ms-3 mt-3 mb-5 text-white" href="/healdesk/doctor/<%=p._id%>/patient">Patients</a></div>
+    </div>
+    <div><a class="btn ms-3 mt-3 mb-5 text-white" href="/healdesk/doctor">Back to All</a></div> 

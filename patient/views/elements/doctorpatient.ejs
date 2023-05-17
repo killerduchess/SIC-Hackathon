@@ -1,0 +1,16 @@
+<%layout('layouts/boilerplate.ejs')%>
+    <h1 class="text-center mb-4 text-white"><%=p.name%></h1>
+    <a class="btn glass text-white ms-3 mb-3" href="/healdesk/patient/<%=p._id%>/patient/new">Add new patient</a>
+    
+        <%for(let i =0;i<n;i++) {%>
+            <div class=" ms-3 mt-3 mb-5 text-white container mt-5 mb-5 bg-info">
+            <p>RID - <%=rid[i]%></p>
+            <p>Date - <%=date[i]%></p>
+            <p>Doctor - <%=doctor[i]%></p>
+            <p>Prescription - <%=prescription[i]%></p>
+            <p>Medicine - <%=medicines[i]%></p>
+            <p>Disease - <%=disease[i]%></p>
+        </div>
+            <%}%>
+    
+    <div><a class="btn ms-3 mt-3 mb-5 text-white" href="/healdesk/doctor/<%=p._id%>">Back to All</a></div> 

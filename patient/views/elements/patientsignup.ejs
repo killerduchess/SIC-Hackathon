@@ -1,0 +1,41 @@
+<%layout('layouts/boilerplate.ejs')%>
+
+
+    <div class="row editpage mt-5">
+        <h1 class="text-center mb-3 text-white">Sign up Patient</h1>
+        <div class="col-6 offset-3">
+            <form action="/healdesk/patient/signup" method="post">
+                <div class="mb-3">
+                    <label class="form-label text-white"  for="username">Name</label>
+                    <input class='form-control glass' type="text" required="required" name="name" id="name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white" for="dob">Date of Birth</label>
+                    <input class='form-control glass' type="text" required="required" name="dob" id="dob">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white" for="gender">Sex</label>
+                    <select name="gender" class='form-control glass' required="required" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white" for="email">Email</label>
+                    <input class='form-control glass' type="email" required="required" name="email" id="email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white"  for="phone">Phone Number</label>
+                    <input class='form-control glass' type="text" required="required" name="phone" id="phone">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-white" for="password">Password</label>
+                    <input class='form-control glass' id="'pass" type="password" required="required" name="password" id="password">
+                </div>
+                <div class="mb-3">
+                    <button class="btn glass btn-purple:hover text-white mt-3 mb-3">Sign up Patient</button>
+                </div>
+            </form>
+        </div>
+    </div>
